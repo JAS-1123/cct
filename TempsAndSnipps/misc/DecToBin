@@ -1,0 +1,8 @@
+string bin(ll n){
+    string ans;    
+    for(ll i = 62; i >= 0; i--){        
+        if(n&(1LL<<i)) ans += '1';
+        else ans += '0';
+    }
+    return ans;
+}
